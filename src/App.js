@@ -1,9 +1,17 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import PLSeasons from 'components/PLSeasons'
+import SingleSeason from 'components/SingleSeason'
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <BrowserRouter>
+      <main>
+        <Routes>
+          <Route path="/" element={<PLSeasons />} />
+          <Route path="/season/:id" element={<SingleSeason />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   )
 }
