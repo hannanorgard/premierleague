@@ -6,21 +6,21 @@ export const Styled = {
     margin: 0px auto;
     width: 100%;
   `,
-  HeaderContainer: styled.div`
+  HeaderDiv: styled.div`
+    text-align: center;
     margin-bottom: 5rem;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr;
   `,
   Container: styled.div`
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 14px;
-    grid-row-gap: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 50rem;
-    box-shadow: 5px 5px 5px #000;
+    box-shadow: 2px 2px 2px lightpink;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 2rem;
     margin: 0px auto;
+    text-align: center;
   `,
   TitleText: styled.h1`
     font-family: 'Gazebo';
@@ -31,6 +31,11 @@ export const Styled = {
   `,
   Paragraph: styled.p`
     font-family: 'Montserrat', sans-serif;
+    flex: 0 0 calc(16.66% - 20px);
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 2rem;
   `,
   Link: styled.link`
     text-decoration: none;

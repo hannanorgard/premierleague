@@ -19,13 +19,13 @@ const Seasons = () => {
 
   return (
     <Styled.Wrapper>
-      <Styled.HeaderContainer>
+      <Styled.HeaderDiv>
         <Styled.TitleText>PREMIER LEAGUE STATS</Styled.TitleText>
         <Styled.SecondTitle>Choose a season below to see more!</Styled.SecondTitle>
-      </Styled.HeaderContainer>
+      </Styled.HeaderDiv>
       <Styled.Container>
         {seasonList.map((season) => (
-          <Link style={{ color: 'inherit', textDecoration: 'none' }} key={season.season} to={`/season/${season}`}>
+          <Link style={{ color: 'inherit', textDecoration: 'none' }} key={season} to={`/season/${season}`}>
             <div>
               <Styled.Paragraph key={season}>{season}</Styled.Paragraph>
             </div>
