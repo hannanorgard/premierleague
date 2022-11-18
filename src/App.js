@@ -9,7 +9,7 @@ export const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<PLSeasons />} />
-          <Route path="/season" element={<SingleSeason />} />
+          <Route path="/season/:season" element={<SingleSeason />} />
         </Routes>
       </main>
     </BrowserRouter>
