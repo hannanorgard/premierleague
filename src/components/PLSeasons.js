@@ -21,7 +21,7 @@ const Seasons = () => {
     <Styled.Wrapper>
       <Styled.HeaderDiv>
         <Styled.TitleText>PREMIER LEAGUE STATS</Styled.TitleText>
-        <Styled.SecondTitle>Choose a season below to see more!</Styled.SecondTitle>
+        <Styled.SecondTitle>Choose a season below!</Styled.SecondTitle>
       </Styled.HeaderDiv>
       <Styled.Container>
         {seasonList.map((season) => (

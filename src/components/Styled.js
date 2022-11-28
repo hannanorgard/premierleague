@@ -31,7 +31,7 @@ export const Styled = {
     }
   `,
   TitleText: styled.h1`
-    font-family: 'Gazebo';
+    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
   `,
   SecondTitle: styled.h2`
